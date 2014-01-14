@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'highline/import'
+require_relative '../lib/input'
+require_relative '../lib/bowling_game'
+require_relative '../lib/game'
+require_relative '../lib/frame'
+
+
+g = Game.new(Input.new, BowlingGame.new)
+g.start
